@@ -4,22 +4,21 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.google.android.material.snackbar.Snackbar
 import es.ipow.imc.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var b : ActivityMainBinding
-    private var height = 100
+    private var height = 150
     private var weight = 75
     private var doubleHeight = 2.25
-    private var IMC = 25.95
+    private var IMC = 33.33
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         b = ActivityMainBinding.inflate(layoutInflater)
         setContentView(b.root)
-
+        calcObesidad()
         b.skbHeight.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 b.tvHeightValue.text = progress.toString().plus("/200")
@@ -59,8 +58,7 @@ class MainActivity : AppCompatActivity() {
             in 25.0..29.99 -> ContextCompat.getColor(this, R.color.preobesidad)
             in 30.0..34.99 -> ContextCompat.getColor(this, R.color.obesidad_leve)
             in 35.0..39.99 -> ContextCompat.getColor(this, R.color.obesidad_media)
-            in 40.0..99.99 -> ContextCompat.getColor(this, R.color.obesidad_morbida)
-            else -> ContextCompat.getColor(this, R.color.black)
+            else -> ContextCompat.getColor(this, R.color.obesidad_morbida)
         }
         val obesidad = when (IMC){
             in 0.0..15.99 -> "DELGADEZ SEVERA"
@@ -70,8 +68,7 @@ class MainActivity : AppCompatActivity() {
             in 25.0..29.99 -> "PREOBESIDAD"
             in 30.0..34.99 -> "OBESIDAD LEVE"
             in 35.0..39.99 -> "OBESIDAD MEDIA"
-            in 40.0..99.99 -> "OBESIDAD MÓRBIDA"
-            else -> "Algo hemos programado mal :_("
+            else -> "OBESIDAD MÓRBIDA"
         }
         val sb = Snackbar.make(b.root, obesidad, Snackbar.LENGTH_LONG)
         sb.setTextColor(Color.WHITE)
@@ -82,7 +79,6 @@ class MainActivity : AppCompatActivity() {
         }
         sb.show()
     }
-
     fun showTable(){
         val dialog = TableFragment()
         dialog.show(supportFragmentManager, "TablaPeso")
