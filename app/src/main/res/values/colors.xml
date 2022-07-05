@@ -8,4 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#FF67B637</color>
+    <color name="delgadez_severa">#3949AB</color>
+    <color name="delgadez_moderada">#1E88E5</color>
+    <color name="delgadez_leve">#00ACC1</color>
+    <color name="normal">#43A047</color>
+    <color name="preobesidad">#C0CA33</color>
+    <color name="obesidad_leve">#FFB300</color>
+    <color name="obesidad_media">#FB8C00</color>
+    <color name="obesidad_morbida">#E53935</color>
 </resources>
