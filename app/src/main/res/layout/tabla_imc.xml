@@ -4,18 +4,16 @@
     android:id="@+id/LinearLayoutParent"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
     android:orientation="vertical"
-    android:paddingStart="24dp"
-    android:paddingTop="24dp">
+    android:padding="24dp">
 
     <TextView
         android:id="@+id/tvTituloAlert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata_regular"
-        android:paddingBottom="8dp"
-        android:text="TABLA IMC"
+        android:paddingBottom="16dp"
+        android:text="@string/tabla_imc"
         android:textAlignment="center"
         android:textColor="@color/normal"
         android:textSize="20sp"

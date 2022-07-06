@@ -1,15 +1,16 @@
 <resources>
     <string name="app_name">Calculadora IMC</string>
+    <string name="tabla_imc">TABLA IMC</string>
     <string name="aceptar">Aceptar</string>
     <string name="altura">Altura</string>
     <string name="peso">Peso</string>
     <string name="tabla_peso">Tabla de Pesos</string>
-    <string name="delgadez_severa">&lt;16.00 : Delgadez Severa</string>
+    <string name="delgadez_severa">Menos de 16.00 : Delgadez Severa</string>
     <string name="delgadez_moderada">16.00 – 16.99 : Delgadez Moderada</string>
     <string name="delgadez_leve">17.00 – 18.49 : Delgadez Leve</string>
     <string name="normal">18.50 – 24.99 : Peso Normal</string>
     <string name="preobesidad">25.00 – 29.99 : Preobesidad</string>
     <string name="obesidad_leve">30.00 – 34.99 : Obesidad Leve</string>
     <string name="obesidad_media">35.00 – 40.00 : Obesidad Media</string>
-    <string name="obesidad_morbida">&gt;40.00 : Obesidad Mórbida</string>
+    <string name="obesidad_morbida">Más de 40.00 : Obesidad Mórbida</string>
 </resources>
