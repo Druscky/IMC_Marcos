@@ -31,6 +31,7 @@
             android:id="@+id/tvD1"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_gravity="center"
             android:background="@drawable/circle"
             android:backgroundTint="@color/delgadez_severa" />
 
@@ -38,6 +39,7 @@
             android:id="@+id/tvDSev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="8dp"
             android:fontFamily="@font/alata_regular"
             android:text="@string/delgadez_severa"
@@ -54,6 +56,7 @@
             android:id="@+id/tvD2"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_gravity="center"
             android:background="@drawable/circle"
             android:backgroundTint="@color/delgadez_moderada" />
 
@@ -77,6 +80,7 @@
             android:id="@+id/tvD3"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_gravity="center"
             android:background="@drawable/circle"
             android:backgroundTint="@color/delgadez_leve" />
 
@@ -100,6 +104,7 @@
             android:id="@+id/tvD4"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_gravity="center"
             android:background="@drawable/circle"
             android:backgroundTint="@color/normal" />
 
@@ -123,6 +128,7 @@
             android:id="@+id/tvD5"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_gravity="center"
             android:background="@drawable/circle"
             android:backgroundTint="@color/preobesidad" />
 
@@ -146,6 +152,7 @@
             android:id="@+id/tvD6"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_gravity="center"
             android:background="@drawable/circle"
             android:backgroundTint="@color/obesidad_leve" />
 
@@ -169,6 +176,7 @@
             android:id="@+id/tvD7"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_gravity="center"
             android:background="@drawable/circle"
             android:backgroundTint="@color/obesidad_media" />
 
@@ -192,6 +200,7 @@
             android:id="@+id/tvD8"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_gravity="center"
             android:background="@drawable/circle"
             android:backgroundTint="@color/obesidad_morbida" />
 
